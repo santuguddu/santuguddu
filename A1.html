@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple system for registering, editing, and managing student details.">
+  <meta name="author" content="Santosh Totad">
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="A1.css">
+</head>
+<body>
+  <header>
+    <h1>Student Registration System</h1>
+    <p>A platform to register, edit, and manage student records efficiently.</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Register a Student</h2>
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="studentName">Student Name:</label>
+          <input type="text" id="studentName" name="studentName" placeholder="Enter full name" required>
+        </div>
+        <div class="form-group">
+          <label for="studentID">Student ID:</label>
+          <input type="text" id="studentID" name="studentID" placeholder="Enter student ID" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required>
+        </div>
+        <div class="form-group">
+          <label for="contactNo">Contact No:</label>
+          <input type="tel" id="contactNo" name="contactNo" placeholder="Enter contact number" required>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="records-container">
+      <h2>Registered Students</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Student ID</th>
+            <th>Email ID</th>
+            <th>Contact No</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentRecords">
+          <!-- Records will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Santosh Totad. All Rights Reserved.</p>
+  </footer>
+
+  <script src="A1.js"></script>
+</body>
+</html>
